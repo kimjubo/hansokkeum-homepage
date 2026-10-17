@@ -119,3 +119,8 @@ h1,h2,h3{line-height:1.3;margin:0}
 /* 약속 4개: 아이콘은 같은 세로줄, 글만 왼쪽 정렬 */
 .checks li{justify-content:flex-start;text-align:left}
 .checks li img,.checks li svg{flex:0 0 auto}
+
+/* 약속 4개 최종: 아이콘 열 고정(32px), 글은 왼쪽 시작선 동일 */
+.checks{width:100%;max-width:420px}
+.checks li{display:grid;grid-template-columns:32px 1fr;column-gap:14px;align-items:center;justify-content:start;text-align:left;padding-left:20px}
+.checks li img{width:32px;height:32px;margin:0;justify-self:start}
