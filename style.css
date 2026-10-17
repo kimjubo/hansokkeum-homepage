@@ -115,3 +115,7 @@ h1,h2,h3{line-height:1.3;margin:0}
 .promise-in{justify-items:center}
 .faq summary{padding:14px 28px;text-align:center}
 .faq summary::after{right:8px}
+
+/* 약속 4개: 아이콘은 같은 세로줄, 글만 왼쪽 정렬 */
+.checks li{justify-content:flex-start;text-align:left}
+.checks li img,.checks li svg{flex:0 0 auto}
