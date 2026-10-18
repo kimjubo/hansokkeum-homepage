@@ -70,7 +70,7 @@ h1,h2,h3{line-height:1.3;margin:0}
 .steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:22px;text-align:left;position:relative}
 .steps li{display:grid;grid-template-columns:52px 1fr;gap:0 16px;align-items:center}
 .steps img{grid-row:span 2}
-.steps b{font-size:17px;font-weight:900;letter-spacing:.06em}
+.steps b{font-size:17px;font-weight:900;letter-spacing:.06em;line-height:26px}
 .steps span{color:var(--muted);font-size:14px}
 .faq details{border-bottom:1px solid var(--line);padding:4px 0}
 .faq summary{cursor:pointer;font-weight:800;padding:14px 28px 14px 0;position:relative;list-style:none;word-break:keep-all}
@@ -95,9 +95,9 @@ h1,h2,h3{line-height:1.3;margin:0}
   .strengths{grid-template-columns:repeat(3,1fr);gap:48px}
   .promise-in{grid-template-columns:1fr 1fr;gap:64px}
   .cards{grid-template-columns:repeat(4,1fr);gap:24px}
-  .steps{grid-template-columns:repeat(5,1fr);text-align:center}
-  .steps li{grid-template-columns:1fr;justify-items:center;gap:6px}
-  .steps img{grid-row:auto}
+  .steps{grid-template-columns:repeat(5,minmax(0,1fr));text-align:center;align-items:start}
+  .steps li{grid-template-columns:1fr;grid-template-rows:52px 26px 1fr;justify-items:center;align-items:start;gap:12px;min-width:0}
+  .steps img{grid-row:auto;width:52px;height:52px;object-fit:contain;display:block}
   .contact-list{grid-template-columns:repeat(3,1fr)}
   .foot-in{grid-template-columns:auto 1fr;align-items:start;gap:48px}
   .copy{grid-column:1/-1}
