@@ -3,24 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>한소끔(가칭) · 시안</title>
-<meta name="description" content="[브랜드 한 줄 소개 입력] 시안 페이지 · 내용은 예시입니다.">
+<title>한소끔 · 한 번 끓어오른 따뜻함이 오래도록</title>
+<meta name="description" content="한소끔은 안동의 약초와 헴프씨드 유래 원료를 활용한 간편식을 개발하는 식품 브랜드입니다.">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="style.css">
+<style>.cards{grid-template-columns:1fr;max-width:840px;margin-inline:auto}.card{padding:28px}.card p{word-break:keep-all}.card details{text-align:left;margin-top:20px}.card summary{cursor:pointer;font-weight:700}.thumb{aspect-ratio:auto;min-height:120px;place-items:center;font-size:24px;font-weight:800}.notice{margin-top:24px;color:var(--muted);font-size:14px}.hero-art{padding:28px;text-align:center}.hero-art .art-copy{font-size:clamp(24px,4vw,36px);font-weight:800;word-break:keep-all}.hero-art small{display:block;font-size:13px;font-weight:400;letter-spacing:.16em;margin-bottom:18px}.hero-art .ph-label{position:static;margin-top:24px}.contact-list{grid-template-columns:1fr}.steps span{word-break:keep-all}.team{margin-top:24px}.nav{gap:18px}@media(min-width:760px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-list{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
 </head>
 <body>
-<div class="ribbon" aria-hidden="true">시안 · 내용은 예시</div>
+
 
 <header class="site-header" id="top">
   <div class="wrap header-in">
-    <a class="brand" href="#top" aria-label="한소끔(가칭) 홈"><img src="assets/logo-color.svg" alt="한소끔(가칭) 로고 시안" width="150" height="58"></a>
+    <a class="brand" href="#top" aria-label="한소끔 홈"><img src="assets/logo-color.svg" alt="한소끔 로고" width="150" height="58"></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
     <nav id="nav" class="nav">
-      <a href="#intro">브랜드</a>
-      <a href="#products">제품</a>
-      <a href="#process">생산 과정</a>
-      <a href="#buy">구매처</a>
-      <a href="#contact">문의</a>
+      <a href="#intro">브랜드 스토리</a>
+      <a href="#products">제품 소개</a>
+      <a href="#process">원료와 공정</a>
+      <a href="#promise">브랜드 약속</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">제휴 문의</a>
     </nav>
   </div>
 </header>
@@ -29,138 +31,119 @@
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-text">
-      <p class="eyebrow">[HANSOKKUM · 예)]</p>
-      <h1>[예) 한 솥 가득, 정직하게 담은 햄프씨드]</h1>
-      <p class="sub">[예) 재배지와 원료 이야기를 한두 문장으로 소개하는 자리입니다. 실제 문구로 교체됩니다.]</p>
+      <p class="eyebrow">HANSOKKEUM · ANDONG</p>
+      <h1>한 번의 끓어오름,<br>오래 남는 온기</h1>
+      <p class="sub">한 번 끓어오른 따뜻함이 식사 시간을 넘어 일상의 기억 속에 오래 머물도록, 자연의 원료로 한 끼를 준비합니다.</p>
       <div class="btns">
-        <a class="btn primary" href="#products">제품 보기</a>
-        <a class="btn ghost" href="#process">생산 과정</a>
+        <a class="btn primary" href="#products">제품 알아보기</a>
+        <a class="btn ghost" href="#intro">브랜드 이야기</a>
       </div>
     </div>
-    <div class="hero-art" role="img" aria-label="대표 이미지 자리표시">
-      <svg viewBox="0 0 400 400" aria-hidden="true">
-        <circle cx="200" cy="200" r="170" class="a1"/>
-        <path class="a2" d="M70 250C90 140 190 90 290 130c60 25 60 110 10 150-70 56-190 40-230-30z"/>
-        <g class="seeds">
-          <ellipse cx="150" cy="210" rx="26" ry="38" transform="rotate(-25 150 210)"/>
-          <ellipse cx="225" cy="170" rx="26" ry="38" transform="rotate(20 225 170)"/>
-          <ellipse cx="250" cy="250" rx="26" ry="38" transform="rotate(-10 250 250)"/>
-          <ellipse cx="190" cy="285" rx="22" ry="32" transform="rotate(35 190 285)"/>
-        </g>
-      </svg>
-      <span class="ph-label">[대표 이미지 1920×1080 자리]</span>
+    <div class="hero-art">
+      <div class="art-copy"><small>HANSOKKEUM</small>안동에서 찾은<br>한 끼의 깊이<p class="ph-label">불 없이 만나는 따뜻한 식사 · 제품 개발 중</p></div>
     </div>
   </div>
 </section>
 
 <section class="intro" id="intro">
   <div class="wrap narrow center">
-    <h2 class="h-orn">[예) 한소끔 이야기]</h2>
-    <p class="lead">[예) 브랜드가 어떤 마음으로 시작됐는지, 원료가 어디서 와서 어떻게 제품이 되는지 3~4문장으로 소개하는 자리입니다.]</p>
+    <h2 class="h-orn">한 번의 끓어오름이 남기는 온기</h2>
+    <p class="lead">한소끔은 ‘한 번 끓어오름’을 뜻하는 우리말에서 출발한 식품 브랜드입니다. 대표 박정환을 중심으로 안동의 헴프씨드 유래 원료와 지역 약초 농축액을 활용해 간편한 한 끼를 개발하고 있습니다. 한 번 끓어오른 따뜻함이 식사 시간을 넘어 오래도록 이어지도록, 깊은 맛과 편리함을 함께 전하고자 합니다.</p>
   </div>
   <div class="wrap strengths">
     <article class="strength">
       <img src="assets/icons/strength1_local.svg" alt="" width="56" height="56">
-      <h3><span>[강점 1 · 예) 지역]</span></h3>
-      <p>[예) 한두 문장으로 강점을 설명합니다.]</p>
+      <h3><span>지역의 가치</span></h3>
+      <p>안동 약초와 헴프씨드 유래 원료를 활용해 지역자원의 새로운 쓰임을 고민합니다.</p>
     </article>
     <article class="strength">
       <img src="assets/icons/strength2_sustain.svg" alt="" width="56" height="56">
-      <h3><span>[강점 2 · 예) 지속가능성]</span></h3>
-      <p>[예) 한두 문장으로 강점을 설명합니다.]</p>
+      <h3><span>깊은 국물</span></h3>
+      <p>약초 농축액 육수와 닭고기 등을 조합해 담백하고 깊은 한 끼를 개발합니다.</p>
     </article>
     <article class="strength">
       <img src="assets/icons/strength3_making.svg" alt="" width="56" height="56">
-      <h3><span>[강점 3 · 예) 제조]</span></h3>
-      <p>[예) 한두 문장으로 강점을 설명합니다.]</p>
+      <h3><span>간편한 온기</span></h3>
+      <p>별도 화구 없이 따뜻한 식사를 즐길 수 있는 발열 포장 방식을 검토하고 있습니다.</p>
     </article>
   </div>
 </section>
 
-<section class="promise">
+<section class="promise" id="promise">
   <div class="wrap promise-in">
     <div>
-      <h2 class="h-orn left">[예) 브랜드 약속]</h2>
-      <p class="lead">[예) 약속을 소개하는 슬로건과 한두 문장. 실제로 지킬 수 있는 내용만 입력합니다.]</p>
+      <h2 class="h-orn left">한소끔의 약속</h2>
+      <p class="lead">‘한소끔’은 음식이 한 번 끓어오르는 모양을 가리키는 우리말입니다. 끓어오르는 순간은 짧지만 그때 시작된 온기는 오래 남습니다. 한소끔은 한 번 끓어오른 따뜻함이 식탁을 넘어 사람들의 일상에 계속 이어지기를 바랍니다.</p>
     </div>
     <ul class="checks">
-      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">[약속 1 · 예) 원료 출처 공개]</li>
-      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">[약속 2 · 예) 제조 과정 안내]</li>
-      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">[약속 3 · 예) 표시사항 정직하게]</li>
-      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">[약속 4 · 예) 문의에 빠른 답변]</li>
+      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">좋은 원료의 가치에 집중합니다</li>
+      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">한 끼의 따뜻함을 생각합니다</li>
+      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">지역과 함께 성장하는 길을 찾습니다</li>
+      <li><img src="assets/icons/check.svg" alt="" width="32" height="32">확인된 사실만 정직하게 전합니다</li>
     </ul>
   </div>
 </section>
 
 <section class="products" id="products">
   <div class="wrap center">
-    <h2 class="h-orn">[예) 대표 제품]</h2>
+    <h2 class="h-orn">따뜻한 한 끼를 준비합니다</h2>
+    <p class="lead">현재 제품 개발·기획 단계로, 정식 판매를 시작하지 않았습니다.</p>
     <div class="cards">
-      <article class="card"><div class="thumb t1" role="img" aria-label="제품 이미지 자리"><span>[제품 사진]</span></div><h3>[제품명 1]</h3><p class="meta">[용량 예) 000g]</p><p class="price">[가격 예) 00,000원]</p><a class="btn small" href="#buy">구매처 보기</a></article>
-      <article class="card"><div class="thumb t2" role="img" aria-label="제품 이미지 자리"><span>[제품 사진]</span></div><h3>[제품명 2]</h3><p class="meta">[용량 예) 000g]</p><p class="price">[가격 예) 00,000원]</p><a class="btn small" href="#buy">구매처 보기</a></article>
-      <article class="card"><div class="thumb t3" role="img" aria-label="제품 이미지 자리"><span>[제품 사진]</span></div><h3>[제품명 3]</h3><p class="meta">[용량 예) 000ml]</p><p class="price">[가격 예) 00,000원]</p><a class="btn small" href="#buy">구매처 보기</a></article>
-      <article class="card"><div class="thumb t4" role="img" aria-label="제품 이미지 자리"><span>[제품 사진]</span></div><h3>[제품명 4]</h3><p class="meta">[용량 예) 000g]</p><p class="price">[가격 예) 00,000원]</p><a class="btn small" href="#buy">구매처 보기</a></article>
+      <article class="card"><div class="thumb t1"><span>개발 중</span></div><h3>안동 온한끼 · 한끼닭</h3><p>안동 약초 육수를 담은 발열형 백숙 한 끼</p><p class="meta">용량·판매가 미정</p><details><summary>개발 이야기</summary><p>안동 약초 농축액 기반의 백숙형 육수, 닭고기, 건대파 등으로 구성한 발열형 간편식 개발 프로젝트입니다. 식품은 내부 밀봉 파우치에 담고 발열팩·물을 이용하는 분리형 구조를 검토하고 있습니다. 최종 성분, 조리 시간 및 표시사항은 제품화 검증 후 확정합니다.</p></details></article>
+      <article class="card"><div class="thumb t2"><span>기획 단계</span></div><h3>한소끔 약초 농축액 육수</h3><p>약초의 깊은 풍미를 담아낸 농축 육수</p><p class="meta">용량·판매가 미정</p><details><summary>기획 이야기</summary><p>황기·대추 등 약초 원료를 조합해 깊고 담백한 맛을 추구하는 육수 기획입니다. 제품 판매 여부와 원재료 배합비는 미정입니다.</p></details></article>
     </div>
+    <p class="notice">제품 사진과 포장지 표시사항은 제품화 및 포장지 확정 후 안내합니다.</p>
   </div>
 </section>
 
 <section class="process" id="process">
   <div class="wrap center">
-    <h2 class="h-orn">[예) 재배부터 완제품까지]</h2>
+    <h2 class="h-orn">원료부터 완제품까지</h2>
     <ol class="steps">
-      <li><img src="assets/icons/step1_sow.svg" alt="" width="52" height="52"><b>파종</b><span>[예) 시기·설명 입력]</span></li>
-      <li><img src="assets/icons/step2_grow.svg" alt="" width="52" height="52"><b>생육</b><span>[예) 시기·설명 입력]</span></li>
-      <li><img src="assets/icons/step3_harvest.svg" alt="" width="52" height="52"><b>수확</b><span>[예) 시기·설명 입력]</span></li>
-      <li><img src="assets/icons/step4_produce.svg" alt="" width="52" height="52"><b>생산</b><span>[예) 시기·설명 입력]</span></li>
-      <li><img src="assets/icons/step5_product.svg" alt="" width="52" height="52"><b>완제품</b><span>[예) 시기·설명 입력]</span></li>
-    </ol>
+      <li><img src="assets/icons/step1_sow.svg" alt="" width="52" height="52"><b>파종</b><span>원료 재배는 공급 농가·협력처가 담당하는 구조를 검토 중입니다.</span></li>
+      <li><img src="assets/icons/step2_grow.svg" alt="" width="52" height="52"><b>생육</b><span>생육·재배 환경과 원료 확보 방식은 공급 농가와 확인하여 생산 이력 자료로 안내할 예정입니다.</span></li>
+      <li><img src="assets/icons/step3_harvest.svg" alt="" width="52" height="52"><b>수확</b><span>수확 주체와 시기는 공급처의 실제 생산·수확 기록을 확인한 뒤 안내합니다.</span></li>
+      <li><img src="assets/icons/step4_produce.svg" alt="" width="52" height="52"><b>생산</b><span>약초 추출·원료 가공과 OEM 제조 공정을 연계하는 방식으로, 제조 시설·공정은 계약 후 확정합니다.</span></li>
+      <li><img src="assets/icons/step5_product.svg" alt="" width="52" height="52"><b>완제품</b><span>원료 선정, 배합·관능 테스트, 식품 파우치 구성과 포장 안전성 검토를 거쳐 준비합니다.</span></li>
+    </ol><p class="notice">품질관리 항목·주기와 검사성적서 공개 기준은 OEM 제조사·제품 규격 확정 후 마련할 예정입니다.<br>판매원(계획): 한소끔 · 제조원·소재지: OEM 선정 후 확정</p>
   </div>
 </section>
 
 <section class="buy" id="buy">
-  <div class="wrap center narrow">
-    <h2 class="h-orn">[예) 구매처]</h2>
-    <p class="lead">[예) 온라인 판매처 안내 문구]</p>
-    <div class="btns center-btns">
-      <a class="btn primary" href="#buy" data-placeholder>스마트스토어 [링크 입력]</a>
-      <a class="btn dark" href="#buy" data-placeholder>쿠팡 [링크 입력]</a>
-    </div>
-  </div>
+  <div class="wrap center narrow"><h2 class="h-orn">출시 후 판매처를 안내합니다</h2><p class="lead">품질·포장 안전성 검증과 생산 준비를 마친 뒤 출시 일정과 구매 방법을 안내하겠습니다.</p>
+  <p class="notice">배송 및 교환·반품 조건은 정식 판매 전에 확정해 안내합니다.</p></div>
 </section>
 
-<section class="faq" id="faq">
-  <div class="wrap narrow">
-    <h2 class="h-orn">[예) 자주 묻는 질문]</h2>
-    <details><summary>[질문 1 · 예) 보관은 어떻게 하나요?]</summary><p>[답변 입력 · 예) 제품 포장지 표시사항을 따릅니다.]</p></details>
-    <details><summary>[질문 2 · 예) 배송은 얼마나 걸리나요?]</summary><p>[답변 입력]</p></details>
-    <details><summary>[질문 3 · 예) 교환·환불은 어떻게 하나요?]</summary><p>[답변 입력]</p></details>
-    <details><summary>[질문 4 · 예) 대량 구매 문의는 어디로 하나요?]</summary><p>[답변 입력]</p></details>
-  </div>
-</section>
+<section class="faq" id="faq"><div class="wrap narrow"><h2 class="h-orn">자주 묻는 질문</h2><details><summary>지금 주문할 수 있나요?</summary><p>현재 제품 개발 중으로 정식 판매를 시작하지 않았습니다.</p></details>
+<details><summary>출시일은 언제인가요?</summary><p>품질·포장 안전성 검증과 생산 준비를 마친 뒤 안내할 예정입니다.</p></details>
+<details><summary>배송비는 얼마인가요?</summary><p>정식 판매 전 택배사와 배송비를 확정해 고지하겠습니다.</p></details>
+<details><summary>한소끔은 어떤 브랜드인가요?</summary><p>안동 약초와 헴프씨드 유래 원료를 활용한 간편식을 개발하는 식품 브랜드입니다.</p></details>
+<details><summary>안동 온한끼는 어떤 제품인가요?</summary><p>별도 화구 없이 발열 기능으로 따뜻하게 즐기는 백숙형 간편식을 개발 중입니다.</p></details>
+<details><summary>헴프씨드 원료를 사용할 수 있나요?</summary><p>식품에 허용되는 원료·부위·처리 조건 등은 관련 법령과 개별 원료 증빙을 확인 중이며, 확인 전 효능·성분을 단정하지 않습니다.</p></details>
+<details><summary>사용법과 주의사항은 무엇인가요?</summary><p>식품 파우치와 발열부를 분리한 구조를 검토 중입니다. 실제 사용법과 가열시간은 발열 안전성 및 제품 시험을 마친 뒤 안내합니다. 발열팩은 식품이 아니며 직접 섭취하거나 식품에 접촉시키지 않습니다. 증기·고온 화상에 주의하고 최종 사용설명서를 확인해 주세요.</p></details></div></section>
 
 <section class="contact" id="contact">
-  <div class="wrap center">
-    <h2 class="h-orn">[예) 문의]</h2>
-    <ul class="contact-list">
-      <li><b>전화</b><span>[전화번호 입력]</span></li>
-      <li><b>이메일</b><span>[이메일 입력]</span></li>
-      <li><b>주소</b><span>[주소 입력]</span></li>
-    </ul>
+  <div class="wrap center"><h2 class="h-orn">제휴 문의</h2>
+    <p class="lead">한소끔의 제품 개발, 유통, 납품, 공동 마케팅 제안을 기다립니다.</p>
+    <div class="wrap narrow"><p>야외 활동·관광·행사·단체식·기업 선물 등 다양한 식사 수요에 맞춘 공급 및 공동개발을 검토하고 있습니다. 제품 출시 전 협업 가능 범위, 최소 수량, 납기와 단가는 상담을 통해 협의합니다.</p></div>
+    <ul class="contact-list"><li><b>운영시간</b><span>10:00–17:00 · 전화번호 준비 중</span></li><li><b>이메일</b><span>문의용 이메일 준비 중</span></li><li><b>지역</b><span>경상북도 안동시</span></li></ul>
+    <p class="notice">문의 채널이 개설되면 이곳에서 안내합니다.</p>
+    <p class="team">박정환 대표 · 브랜드 기획·상품 개발·온라인 유통 총괄</p>
   </div>
 </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap foot-in">
-    <img src="assets/logo-reverse.svg" alt="한소끔(가칭) 로고 시안" width="150" height="58">
+    <img src="assets/logo-reverse.svg" alt="한소끔 로고" width="150" height="58">
     <ul class="biz">
-      <li>상호: [상호 입력]</li>
-      <li>대표: [대표자 입력]</li>
-      <li>사업자등록번호: [사업자등록번호 입력]</li>
-      <li>통신판매업 신고번호: [신고번호 입력]</li>
-      <li>주소: [주소 입력]</li>
+      <li>상호: 한소끔</li>
+      <li>대표: 박정환</li>
+      <li>사업자등록번호: 확인 후 안내</li>
+      <li>통신판매업 신고번호: 완제품 개발 후 안내</li>
+      <li>소재지: 경상북도 안동시 (상세 주소 추후 안내)</li>
     </ul>
-    <p class="copy">© [연도] [상호 입력]. 시안 · 내용은 예시입니다.</p>
+    <p class="copy">© 2026 한소끔(HANSOKKEUM). All rights reserved.</p>
   </div>
 </footer>
 <script src="script.js"></script>
